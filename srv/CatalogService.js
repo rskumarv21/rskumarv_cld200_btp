@@ -6,7 +6,7 @@ module.exports = cds.service.impl( async function(){
     this.on('boost', async (req,res) => {
         try {
             const ID = req.params[0];
-            console.log("Hey Amigo, Your purchase order with id " + req.params[0].NODE_KEY+ " will be boosted");
+            console.log("Hey Amigo, Your purchase order with id as" + req.params[0].NODE_KEY+ " will be boosted");
             const tx = cds.tx(req);
             await tx.update(PurchaseOrder).with({
                 GROSS_AMOUNT: { '+=' : 20000 },
