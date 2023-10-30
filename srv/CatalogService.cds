@@ -34,7 +34,7 @@ service CatalogService @(path : 'CatalogService') {
         @Common.SideEffects : {
             TargetProperties : ['_anubhav/GROSS_AMOUNT']
         }
-        action boost();
+        action boost() returns PurchaseOrder;
         @cds.odata.bindingparameter.name : '_ananya'
         @Common.SideEffects : {
             TargetProperties : ['_ananya/OVERALL_STATUS']
