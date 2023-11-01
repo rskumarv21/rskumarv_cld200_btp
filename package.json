@@ -10,10 +10,13 @@
     "@sap/cds-hana": "^2",
     "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
     "express": "^4",
-    "sqlite": "^5.0.1"
+    "sqlite": "^5.0.1",
+    "@sap/xssec": "^3",
+    "passport": "^0"
   },
   "devDependencies": {
     "@cap-js/sqlite": "^1",
+    "@sap/cds-dk": "^7",
     "@sap/ux-specification": "^1.108.15"
   },
   "scripts": {
@@ -30,7 +33,8 @@
       "db": "hana",
       "[hybrid]": {
         "db": "hana"
-      }
+      },
+      "auth": "xsuaa"
     }
   }
 }
