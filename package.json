@@ -7,6 +7,7 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^7",
+    "@sap/cds-hana": "^2",
     "@sap/cds-odata-v2-adapter-proxy": "^1.9.21",
     "express": "^4",
     "sqlite": "^5.0.1"
@@ -17,9 +18,19 @@
   },
   "scripts": {
     "start": "cds-serve",
+    "deploy": "cds deploy --to hana:dorimon --profile hybrid",
+    "run": "cds watch --profile hybrid",
     "watch-purchaseorderapp": "cds watch --open purchaseorderapp/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "sapux": [
     "app/purchaseorderapp"
-  ]
+  ],
+  "cds": {
+    "requires": {
+      "db": "hana",
+      "[hybrid]": {
+        "db": "hana"
+      }
+    }
+  }
 }

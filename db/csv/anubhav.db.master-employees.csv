@@ -1,4 +1,4 @@
-ID,nameFirst,nameMiddle,nameLast,nameInitials,sex,language,phoneNumber,email,loginName,currency_code,salaryAmount,accountNumber,bankId,bankName
+﻿ID,nameFirst,nameMiddle,nameLast,nameInitials,sex,language,phoneNumber,email,loginName,currency_code,salaryAmount,accountNumber,bankId,bankName
 02BD2137-0890-1EEA-A6C2-BB55C19787FB,Sally,,Spring,,F,E,+1 224 374 524,sally.spring@itelo.info,SPRINGS,USD,55549,111222333,510000655,My Bank of Antioch
 02BD2137-0890-1EEA-A6C2-BB55C197A7FB,Susan,,Summer,,F,E,,susan.summer@itelo.info,SUMMERS,USD,76239,9988776655,121000358,My Bank of San Francisco
 02BD2137-0890-1EEA-A6C2-BB55C197C7FB,Franco,Richard,Fall,,M,E,,franco.fall@itelo.info,FALLF,USD,85962,8877665544,121000358,My Bank of San Francisco
